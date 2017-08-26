@@ -1,0 +1,87 @@
+body {
+  width: 100%;
+  height: 100%;
+  padding-top: 0px;
+  opacity:0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; /* Safari */ }
+
+/*Section full*/
+section {
+  padding: 100px 100px; }
+
+/*Section head font*/
+section h2 {
+  font-size: 50px; }
+
+/* Cover Section Start*/
+header.cover {
+  position: relative;
+  padding: 250px 0;
+  background-image: url("../images/cover.jpg");
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+header.cover .cover-content {
+  position: relative;
+  z-index: 1; }
+
+header.cover .cover-content h2 {
+  font-size: 50px;
+  max-width: 450px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: white; }
+@media (min-width: 768px) {
+  header.cover .cover-content h2 {
+    font-size: 80px; } }
+
+header.cover .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); }
+/* Cover Section End*/
+
+/* About Section Start*/
+section.about .section-heading {
+  margin-bottom: 100px; }
+
+section.about .section-heading h2 {
+  margin-top: 0; }
+
+section.about .section-heading p {
+  margin-bottom: 0; }
+/* About Section End*/
+
+/* resume Section Start*/
+section.resume {
+  position: relative;
+  width: 100%;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  color: white;
+  background: url("../images/pattern.png"), #7b4397;
+  background: url("../images/pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
+  background: url("../images/pattern.png"), linear-gradient(to left, #7b4397, #dc2430); }
+section.resume .header-content {
+  max-width: 500px;
+  margin-bottom: 100px;
+  text-align: center; }
+section.resume .header-content h1 {
+  font-size: 45px; }
+/* resume Section End*/
+
+/* Contact Section Start*/
+section.contact {
+  position: relative;
+  padding: 150px 0; }
+section.contact h2 {
+  font-size: 50px;
+  margin-top: 0; }
+/* Contact Section End*/
