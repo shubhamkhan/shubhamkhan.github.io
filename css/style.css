@@ -1,0 +1,22 @@
+body {
+  padding-top: 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+body{
+    opacity:0;
+    transition: opacity 2s;
+    -webkit-transition: opacity 2s; /* Safari */
+}
