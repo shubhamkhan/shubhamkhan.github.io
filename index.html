@@ -8,122 +8,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>SHUBHAM KHAN</title>
-  <!--Title icon -->
+  <!--Title Icon -->
   <link rel="icon" type="image/x-icon" href="images/logo.jpg" />
-  <!-- Custom Theme Style -->
-  <link href="css/custom.css" rel="stylesheet">
+  <!-- Font Awesome CDN for CSS -->
   <link rel="stylesheet" href="https://use.fontawesome.com/b457d00ee4.css">
+  <!-- Bootstrap CDN for CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <!-- Custom CSS Style -->
+  <link href="css/custom.css" rel="stylesheet">
 </head>
-<body onload="document.body.style.opacity='1'" data-spy="scroll" data-target=".navbar" data-offset="0">
-  <!--Facebook follow code start-->
-<div id="fb-root"></div>
-  <script>
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=273857719778432";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-<!--Facebook Follow code end-->
-
-<!--Facebook Like code start-->
-<div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=273857719778432";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
- </script>
-<!--Facebook Like code end-->
-
-<!--Facebook Share code start-->
- <div id="fb-root"></div>
-   <script>
-     (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=273857719778432";
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!--Facebook Share code end-->
-
-    <!--Facebook Login code start-->
-    <script>
-    // This is called with the results from from FB.getLoginStatus().
-    function statusChangeCallback(response) {
-      console.log('statusChangeCallback');
-      console.log(response);
-      // The response object is returned with a status field that lets the
-      // app know the current login status of the person.
-      // Full docs on the response object can be found in the documentation
-      // for FB.getLoginStatus().
-      if (response.status === 'connected') {
-        // Logged into your app and Facebook.
-        testAPI();
-      } else {
-        // The person is not logged into your app or we are unable to tell.
-        document.getElementById('status').innerHTML = 'Please log ' +
-          'into this app.';
-      }
-    }
-    // This function is called when someone finishes with the Login
-    // Button.  See the onlogin handler attached to it in the sample
-    // code below.
-    function checkLoginState() {
-      FB.getLoginStatus(function(response) {
-        statusChangeCallback(response);
-      });
-    }
-    window.fbAsyncInit = function() {
-    FB.init({
-      appId      : '273857719778432',
-      cookie     : true,  // enable cookies to allow the server to access
-                          // the session
-      xfbml      : true,  // parse social plugins on this page
-      version    : 'v2.8' // use graph api version 2.8
-    });
-    // Now that we've initialized the JavaScript SDK, we call
-    // FB.getLoginStatus().  This function gets the state of the
-    // person visiting this page and can return one of three states to
-    // the callback you provide.  They can be:
-    //
-    // 1. Logged into your app ('connected')
-    // 2. Logged into Facebook, but not your app ('not_authorized')
-    // 3. Not logged into Facebook and can't tell if they are logged into
-    //    your app or not.
-    //
-    // These three cases are handled in the callback function.
-    FB.getLoginStatus(function(response) {
-      statusChangeCallback(response);
-    });
-    };
-    // Load the SDK asynchronously
-    (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    // Here we run a very simple test of the Graph API after login is
-    // successful.  See statusChangeCallback() for when this call is made.
-    function testAPI() {
-      console.log('Welcome!  Fetching your information.... ');
-      FB.api('/me', function(response) {
-        console.log('Successful login for: ' + response.name);
-        document.getElementById('status').innerHTML =
-          'Thanks for logging in, ' + response.name + '!';
-      });
-    }
-    </script>
-    <!--Facebook Login code end-->
+<body onload="document.body.style.opacity='1'">
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -154,16 +48,19 @@
       </div>
     </nav>
 
+    <!-- Home Section -->
     <header class="cover" id="cover">
       <div class="cover-content">
         <div class="container">
           <h2>Error !</br>Try harder.</h2>
-          <a href="#" class="btn btn-outline-primary btn-xl">Download my CV</a>
+          <!-- Google Drive to Download my CV  -->
+          <a href="https://drive.google.com/uc?export=download&id=0B9UqkwPl6R91VzMyZHlZNVFXWG8" class="btn btn-outline-primary btn-xl">Download my CV</a>
         </div>
       </div>
       <div class="overlay"></div>
     </header>
 
+    <!-- About Section -->
     <section class="about" id="about">
       <div class="container">
         <div class="section-heading text-center">
@@ -211,6 +108,7 @@
       </div>
     </section>
 
+    <!-- Resume Section -->
     <section class="resume" id="resume">
       <div class="container">
         <div class="section-heading text-center">
@@ -223,6 +121,7 @@
       </div>
     </section>
 
+    <!-- Skills Section -->
     <section class="skills text-center" id="skills">
       <div class="container">
         <div class="section-heading text-center">
@@ -235,6 +134,7 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact bg-primary text-center text-white" id="contact">
       <div class="container">
         <div class="section-heading text-center">
@@ -269,49 +169,41 @@
             </form>
           </div>
           <div class="col-lg-6">
+            <!-- Google Maps Embed API -->
             <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCArnNwhY5kazal0Rjh8Z2kSQkIdo986YA&q=Bibarda,West+Bengal,India" width=100% height="330" frameborder="0">
             </iframe>
           </div>
         </div>
-          <!--Facebook Follow code start-->
+
+          <!-- Facebook Follow -->
           <div class="fb-follow" data-href="https://www.facebook.com/shubhamkhan0" data-layout="button" data-size="small" data-show-faces="true">
           </div>
-          <!--Facebook Follow code end-->
 
-          <!--Facebook Like code start-->
+          <!-- Facebook Like -->
           <div class="fb-like" data-href="https://shubhamkhan.github.io" data-layout="button" data-action="like" data-size="small" data-show-faces="true" data-share="false">
           </div>
-          <!--Facebook Like code end-->
 
-          <!--Facebook Share code start-->
+          <!-- Facebook Share -->
           <div class="fb-share-button" data-href="https://www.facebook.com/shubhamkhan0" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fshubhamkhan0&amp;src=sdkpreparse">Share</a>
           </div>
-          <!--Facebook Share code end-->
+
       </div>
     </section>
 
   <footer class="bg-dark text-white">
     <div class="container">
       <div class="text-center">
-
-        <!--Facebook Login code start-->
-        <!--
-          Below we include the Login Button social plugin. This button uses
-          the JavaScript SDK to present a graphical Login button that triggers
-          the FB.login() function when clicked.
-        -->
-        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-        </fb:login-button>
-        <div id="status">
-        </div>
-        <!--Facebook Login code end-->
-
         &copy; Shubham Khan 2017. All Rights Reserved.
       </div>
-        <script src="https://use.fontawesome.com/c0d9812789.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <!-- Font Awesome CDN for JS -->
+      <script src="https://use.fontawesome.com/c0d9812789.js"></script>
+      <!-- jQuery CDN for CSS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <!-- Bootstrap CDN for JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+      <!--Custom Script Effect -->
+      <script src="js/custom.js"></script>
     </div>
   </footer>
 </body>

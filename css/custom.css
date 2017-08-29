@@ -84,12 +84,12 @@ section.resume .header-content h1 {
 /* resume Section End*/
 
 /* Contact Section Start*/
-  section.contact .section-heading {
-    margin-bottom: 100px; }
+section.contact .section-heading {
+  margin-bottom: 100px; }
 
-  section.contact .section-heading h2 {
-    margin-top: 0; }
+section.contact .section-heading h2 {
+  margin-top: 0; }
 
-  section.contact .section-heading p {
-    margin-bottom: 0; }
+section.contact .section-heading p {
+  margin-bottom: 0; }
 /* Contact Section End*/
