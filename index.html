@@ -19,14 +19,31 @@
 </head>
 <body onload="document.body.style.opacity='1'">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <!-- Home Section -->
+    <header class="cover" id="cover">
       <div class="container">
-        <a class="navbar-brand text-primary" href="#">I AM SHUBHAM</a>
+        <div class="cover-content">
+          <h2>Error !</br>Try harder.</h2>
+          <!-- Google Drive to Download my CV  -->
+          <a href="https://drive.google.com/uc?export=download&id=0B9UqkwPl6R91VzMyZHlZNVFXWG8" class="btn btn-outline-primary btn-xl">Download my CV</a>
+        </div>
+      </div>
+      <div class="overlay"></div>
+      <div class="scroll-downs">
+        <div class="mousey">
+          <div class="scroller"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand text-primary" href="#"><p class="font-italic font-weight-bold">I AM SHUBHAM</p></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#cover">HOME</a>
@@ -47,18 +64,6 @@
         </div>
       </div>
     </nav>
-
-    <!-- Home Section -->
-    <header class="cover" id="cover">
-      <div class="cover-content">
-        <div class="container">
-          <h2>Error !</br>Try harder.</h2>
-          <!-- Google Drive to Download my CV  -->
-          <a href="https://drive.google.com/uc?export=download&id=0B9UqkwPl6R91VzMyZHlZNVFXWG8" class="btn btn-outline-primary btn-xl">Download my CV</a>
-        </div>
-      </div>
-      <div class="overlay"></div>
-    </header>
 
     <!-- About Section -->
     <section class="about" id="about">
@@ -206,5 +211,6 @@
       <script src="js/custom.js"></script>
     </div>
   </footer>
+  <i id="scroll" class="fa fa-angle-double-up fa-2x fa-fw" aria-hidden="true"></i>
 </body>
 </html>

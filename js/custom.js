@@ -25,6 +25,27 @@ $(document).ready(function(){
   });
 });
 
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#scroll').fadeIn();
+        } else {
+            $('#scroll').fadeOut();
+        }
+        if ($(this).scrollTop() > 675) {
+            $('.navbar').addClass('fixed-top nav-shadow');
+        } else {
+            $('.navbar').removeClass('fixed-top nav-shadow');
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+});
+
+
+
 //Facebook Follow, Like and Share code start
 (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
