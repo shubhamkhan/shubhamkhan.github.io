@@ -1,32 +1,27 @@
+//Scroll effect for navbar
 $(document).ready(function(){
-  // Add scrollspy to <body>
   $('body').scrollspy({target: ".navbar", offset: 0});
-
-  // Add smooth scrolling on all links inside the navbar
   $("#navbarNav a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    }  // End if
+    }
   });
 });
 
+//Scroll effect for Navbar shadow, Mouse Downs and Top to Buttom button
 $(document).ready(function(){
     $(window).scroll(function(){
+        if ($(this).scrollTop() > 90) {
+            $('.scroll-downs').fadeOut();
+        } else {
+            $('.scroll-downs').fadeIn();
+        }
         if ($(this).scrollTop() > 100) {
             $('#scroll').fadeIn();
         } else {
@@ -37,12 +32,24 @@ $(document).ready(function(){
         } else {
             $('.navbar').removeClass('fixed-top nav-shadow');
         }
+        if ($(this).scrollTop() > 3800) {
+          $('.progress .progress-bar').css("width",function(){
+               return $(this).attr("aria-valuenow") + "%";
+           });
+        }
     });
     $('#scroll').click(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
 });
+
+// $(document).ready(function() {
+//      $('.progress .progress-bar').css("width",function(){
+//           return $(this).attr("aria-valuenow") + "%";
+//       });
+//    });
+
 
 
 
