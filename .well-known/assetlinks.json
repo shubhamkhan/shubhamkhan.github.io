@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.flash.flashlight.light",
+    "sha256_cert_fingerprints":
+    ["35:F9:6A:D8:20:30:DD:6E:21:45:DC:47:05:A8:47:2F:33:D9:F1:13:E5:24:F2:BE:A5:A0:81:16:3E:96:71:3C"]
+  }
+}]
