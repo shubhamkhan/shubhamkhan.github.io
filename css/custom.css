@@ -11,9 +11,25 @@ body {
 section {
   padding: 100px 100px; }
 
-/*Section head font */
-section h2 {
-  font-size: 50px; }
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /*Section full */
+  section {
+    padding: 25px 25px; }
+
+  header.cover .cover-content h2 {
+    font-size: 50px;}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /*Section head font */
+  section h2 {
+    font-size: 50px; }
+
+    header.cover .cover-content h2 {
+      font-size: 80px;}
+}
 
 /*Section full */
 footer {
@@ -35,15 +51,11 @@ header.cover .cover-content {
   position: relative;
   z-index: 1; }
 
-header.cover .cover-content h2 {
-  font-size: 50px;
-  max-width: 450px;
-  margin-top: 0;
-  margin-bottom: 25px;
-  color: white; }
-@media (min-width: 768px) {
   header.cover .cover-content h2 {
-    font-size: 80px; } }
+    max-width: 450px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: white; }
 
 header.cover .overlay {
   position: absolute;
