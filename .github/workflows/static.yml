@@ -40,4 +40,11 @@ jobs:
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
+        env:
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
         uses: actions/deploy-pages@v2
+        with:
+          # Pass the secret to the action
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # Use the secret in the action
+          GOOGLE_MAPS_API_KEY: ${{ secrets.GOOGLE_MAPS_API_KEY }}
